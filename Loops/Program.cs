@@ -1,14 +1,14 @@
 ﻿namespace Loops
 {
-    internal class Loops
+    internal class Program
     {
         static void Main(string[] args)
         {
             //1 int
             Console.WriteLine("Opgave 1 \n" + MultiTable() + "\n\n");
 
-            //op til 6 ints
-            Console.WriteLine("Opgave 2 \n" + BiggestNum([1, 2, 3, 4, 5, 6]) + "\n \n");
+            //6 ints
+            Console.WriteLine("Opgave 2 \n" + BiggestNum() + "\n \n");
 
             //1 int
             Console.WriteLine("Opgave 3 \n" + TwoOrMoreSeven() + "\n\n");
@@ -28,7 +28,7 @@
             Console.WriteLine("Opgave 8 \n" + SumAndAvg() + "\n \n");
 
             //1 int, 1 string
-            Console.WriteLine("Opgave 9 \n" + Pyramid() + "\n");
+            Console.WriteLine("Opgave 9 \n" + Pyramid(999, "^") + "\n");
 
             //2 int
             Console.WriteLine("Opgave 10 \n" + PowerOf() + "\n \n");
@@ -49,8 +49,9 @@
         }
 
         //Opgave 2
-        static int BiggestNum(int[] nums)
-        { 
+        static int BiggestNum(int a = 1, int b = 2, int c = 3, int d = 4, int e = 5, int f = 6)
+        {
+            int[] nums = {a, b, c, d, e, f};
             int x = 0;
             foreach (int num in nums)
             {

@@ -1,6 +1,6 @@
 ﻿namespace Strings
 {
-    internal class Strings
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -8,7 +8,7 @@
             Console.WriteLine("Opgave 1 \n" + WordSeparator() + "\n\n");
 
             //1 string
-            Console.WriteLine("Opgave 2 \n" + IsPalindrome("den laks skal ned") + "\n\n");
+            Console.WriteLine("Opgave 2 \n" + IsPalindrome() + "\n\n");
 
             //1 string
             Console.WriteLine("Opgave 3 \n" + StrLen() + "\n\n");
