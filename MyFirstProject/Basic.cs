@@ -1,6 +1,6 @@
 ﻿namespace Basic
 {
-    internal class Program
+    internal class Basic
     {
         static void Main(string[] args)
         {
