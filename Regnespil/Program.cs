@@ -281,12 +281,12 @@
             double SecondNum;
             double svar;
             Console.WriteLine(Liv(ref Forsøg));
-            for (int i = 0; i < 10; i++)
+            for (int i = 1; i < 11;)
             {
                 FirstNum = RandomNumber(ref sværhedsgrad, ref NegativeTal);
                 SecondNum = RandomNumber(ref sværhedsgrad, ref NegativeTal);
                 sum = FirstNum * SecondNum;
-                Console.WriteLine(FirstNum + " * " + SecondNum + " = ");
+                Console.WriteLine(i + ". " + FirstNum + " * " + SecondNum + " = ");
                 try
                 {
                     svar = Convert.ToDouble(Console.ReadLine());
@@ -296,6 +296,7 @@
                 if (svar == sum)
                 {
                     Console.WriteLine("Rigtig\n");
+                    i++;
                 }
                 else 
                 { 
@@ -318,7 +319,7 @@
             double SecondNum;
             double svar;
             Console.WriteLine(Liv(ref Forsøg));
-            for (int i = 0; i < 10; i++)
+            for (int i = 1; i < 11;)
             {
                 FirstNum = RandomNumber(ref sværhedsgrad, ref NegativeTal);
                 SecondNum = RandomNumber(ref sværhedsgrad, ref NegativeTal);
@@ -331,7 +332,7 @@
                     SecondNum++;
                 }
                 sum = FirstNum / SecondNum;
-                Console.WriteLine(FirstNum + " / " + SecondNum + " = ");
+                Console.WriteLine(i + ". " + FirstNum + " / " + SecondNum + " = ");
                 try
                 {
                     svar = Convert.ToDouble(Console.ReadLine());
@@ -341,6 +342,7 @@
                 if (svar == sum)
                 {
                     Console.WriteLine("Rigtig\n");
+                    i++;
                 }
                 else 
                 { 
