@@ -37,11 +37,11 @@
                         break;
 
                     case "*" or "multiplikation" or "Multiplikation":
-                        Multiplikation(ref sværhedsgrad, ref NegativeTal);
+                        Multiplikation(ref sværhedsgrad, ref NegativeTal, ref Forsøg);
                         break;
 
                     case "/" or "divition" or "Divition":
-                        Divition(ref sværhedsgrad, ref NegativeTal);
+                        Divition(ref sværhedsgrad, ref NegativeTal, ref Forsøg);
                         break;
 
                     default:
@@ -274,12 +274,13 @@
             }
         }
 
-        static void Multiplikation(ref int sværhedsgrad, ref bool NegativeTal)
+        static void Multiplikation(ref int sværhedsgrad, ref bool NegativeTal, ref int Forsøg)
         {
             double sum;
             double FirstNum;
             double SecondNum;
             double svar;
+            Console.WriteLine(Liv(ref Forsøg));
             for (int i = 0; i < 10; i++)
             {
                 FirstNum = RandomNumber(ref sværhedsgrad, ref NegativeTal);
@@ -296,16 +297,27 @@
                 {
                     Console.WriteLine("Rigtig\n");
                 }
-                else { Console.WriteLine("Forkert\n" + "svar var: " + sum + "\n"); }
+                else 
+                { 
+                    Console.WriteLine("Forkert\n" + "svar var: " + sum + "\n");
+                    Forsøg--;
+                    Console.WriteLine(Liv(ref Forsøg));
+                    if (Forsøg == 0)
+                    {
+                        Console.WriteLine("\n");
+                        break;
+                    }
+                }
             }
         }
 
-        static void Divition(ref int sværhedsgrad, ref bool NegativeTal)
+        static void Divition(ref int sværhedsgrad, ref bool NegativeTal, ref int Forsøg)
         {
             double sum;
             double FirstNum;
             double SecondNum;
             double svar;
+            Console.WriteLine(Liv(ref Forsøg));
             for (int i = 0; i < 10; i++)
             {
                 FirstNum = RandomNumber(ref sværhedsgrad, ref NegativeTal);
@@ -330,7 +342,17 @@
                 {
                     Console.WriteLine("Rigtig\n");
                 }
-                else { Console.WriteLine("Forkert\n" + "svar var: " + sum + "\n"); }
+                else 
+                { 
+                    Console.WriteLine("Forkert\n" + "svar var: " + sum + "\n");
+                    Forsøg--;
+                    Console.WriteLine(Liv(ref Forsøg));
+                    if (Forsøg == 0)
+                    {
+                        Console.WriteLine("\n");
+                        break;
+                    }
+                }
             }
         }
     }
