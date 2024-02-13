@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             //2 string
-            Console.WriteLine("Opgave 1 \n" + WordSeparator() + "\n\n");
+            Console.WriteLine("Opgave 1 \n" + WordSeparator("Det her er en test") + "\n\n");
 
             //1 string
             Console.WriteLine("Opgave 2 \n" + IsPalindrome("den laks skal ned") + "\n\n");
@@ -42,7 +42,10 @@
                 {
                     NewWord += Word[i];
                     if (Word[i].ToString() != Word[Word.Length  - 1].ToString() && Word[i + 1].ToString() != " ")
-                    NewWord += separator;
+                    {
+                        NewWord += separator;
+                    }
+                    
                 }
                 else
                 {
