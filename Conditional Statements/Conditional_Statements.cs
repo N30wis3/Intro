@@ -30,9 +30,9 @@
         }
 
         //Opgave 1
-        static int AbsoluteValue(double x)
+        static int AbsoluteValue(int x)
         {
-            return Convert.ToInt32(Math.Abs(x));
+            return Math.Abs(x);
         }
 
         //Opgave 2

@@ -9,8 +9,5 @@ namespace Terningespil
     public class Terning
     {
         public int Faces { get; set; }
-
-
-        public int 
     }
 }
