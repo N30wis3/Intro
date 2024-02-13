@@ -1,6 +1,6 @@
 ﻿namespace Regnespil
 {
-    internal class Program
+    internal class Regnespil
     {
          static void Main(string[] args)
         {

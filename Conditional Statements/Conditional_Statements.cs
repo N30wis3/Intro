@@ -1,6 +1,6 @@
 ﻿namespace Conditional_Statements
 {
-    internal class Program
+    internal class Conditional_Statements
     {
         static void Main(string[] args)
         {
