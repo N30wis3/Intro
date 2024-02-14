@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regnespil", "Regnespil\Regnespil.csproj", "{E8AB4994-8C11-4D65-89D0-E1A28854A5DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terningespil", "Terningespil\Terningespil.csproj", "{D0BABCCA-57F8-44BF-AF90-950C2F225D5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terningespil", "Terningespil\Terningespil.csproj", "{D0BABCCA-57F8-44BF-AF90-950C2F225D5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

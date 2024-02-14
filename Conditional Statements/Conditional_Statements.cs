@@ -8,7 +8,7 @@
             Console.WriteLine("Opgave 1 \n" + AbsoluteValue(0) + "\n \n");
 
             //2 ints
-            Console.WriteLine("Opgave 2 \n" + DivBy2or3() + "\n \n");
+            Console.WriteLine("Opgave 2 \n" + DivBy2or3(7, 12) + "\n \n");
 
             //1 string
             Console.WriteLine("Opgave 3 \n" + IfUpper() + "\n \n");
@@ -38,7 +38,7 @@
         //Opgave 2
         static int DivBy2or3(int FirstNum = 15, int SecNum = 30)
         {
-            if (FirstNum % 2 == 0 || FirstNum % 3 == 0 && SecNum % 2 == 0 || SecNum % 3 == 0)
+            if ((FirstNum % 2 == 0 || FirstNum % 3 == 0) && (SecNum % 2 == 0 || SecNum % 3 == 0))
             {
                 return FirstNum * SecNum;
             }

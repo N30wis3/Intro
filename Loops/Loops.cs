@@ -7,7 +7,7 @@
             //1 int
             Console.WriteLine("Opgave 1 \n" + MultiTable() + "\n\n");
 
-            //op til 6 ints
+            //1 int array
             Console.WriteLine("Opgave 2 \n" + BiggestNum([1, 2, 3, 4, 5, 6]) + "\n \n");
 
             //1 int

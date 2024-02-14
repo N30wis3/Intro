@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.Tracing;
-
-namespace Terningespil
+﻿namespace Terningespil
 {
     internal class Terningespil
     {
